@@ -1,0 +1,99 @@
+.slot {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+
+/* Classic podium order: 2nd left, 1st center (tallest), 3rd right */
+.rank1 { order: 2; }
+.rank2 { order: 1; }
+.rank3 { order: 3; }
+
+.panel {
+  position: relative;
+  isolation: isolate;
+  padding: calc(var(--space-4) + 16px) var(--space-3) var(--space-3);
+  margin-bottom: var(--space-2);
+  text-align: center;
+}
+
+.panel::before {
+  content: '';
+  position: absolute;
+  inset: -14px;
+  background: radial-gradient(
+    60% 60% at 50% 15%,
+    color-mix(in srgb, var(--accent) 55%, transparent),
+    transparent 72%
+  );
+  filter: blur(20px);
+  opacity: 0.5;
+  z-index: -1;
+  pointer-events: none;
+  transition: opacity 0.25s var(--ease-out);
+}
+.panel:hover::before {
+  opacity: 0.85;
+}
+
+.badge {
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--on-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--step-0);
+  box-shadow: 0 8px 18px -6px color-mix(in srgb, var(--accent) 70%, transparent);
+  z-index: 2;
+}
+
+.name {
+  font-size: var(--step-1);
+}
+
+.tagline {
+  margin-top: var(--space-1);
+  color: var(--ink-soft);
+  font-size: var(--step--1);
+}
+
+.block {
+  background: linear-gradient(180deg, var(--accent) 0%, var(--accent-strong) 100%);
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-2);
+}
+
+.valuation {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: var(--step--1);
+  font-variant-numeric: tabular-nums;
+  color: var(--on-accent);
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.rank1 .block { height: 180px; }
+.rank2 .block { height: 130px; }
+.rank3 .block { height: 95px; }
+
+@media (max-width: 720px) {
+  .rank1 .block,
+  .rank2 .block,
+  .rank3 .block {
+    height: 64px;
+  }
+}

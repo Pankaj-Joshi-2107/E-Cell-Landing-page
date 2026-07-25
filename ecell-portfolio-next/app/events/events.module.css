@@ -1,0 +1,54 @@
+.hero {
+  padding-top: var(--space-6);
+}
+.heroTitle {
+  margin-top: var(--space-3);
+  font-size: var(--step-4);
+}
+.heroLede {
+  margin-top: var(--space-3);
+  color: var(--ink-soft);
+  max-width: 52ch;
+}
+
+.filterTabs {
+  display: inline-flex;
+  gap: var(--space-1);
+  margin-top: var(--space-4);
+  border: var(--border-w) solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 3px;
+}
+
+.filterBtn {
+  background: transparent;
+  border: none;
+  padding: 0.5em 1.1em;
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-soft);
+  border-radius: 2px;
+}
+
+.filterBtnActive {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.eventGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+}
+
+.empty {
+  color: var(--ink-faint);
+}
+
+@media (max-width: 860px) {
+  .eventGrid {
+    grid-template-columns: 1fr;
+  }
+}

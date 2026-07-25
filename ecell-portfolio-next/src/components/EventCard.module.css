@@ -1,0 +1,56 @@
+.eventCard {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  height: 100%;
+}
+.eventCard:hover {
+  border-color: var(--accent);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+}
+
+.date {
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  color: var(--ink-faint);
+}
+
+.title {
+  font-size: var(--step-1);
+  margin-top: var(--space-1);
+}
+
+.blurb {
+  color: var(--ink-soft);
+  flex: 1;
+}
+
+.foot {
+  padding-top: var(--space-2);
+  border-top: var(--border-w) dashed var(--line);
+}
+
+.status {
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+}
+.statusUpcoming {
+  color: var(--accent);
+}
+.statusPast {
+  color: var(--ink-faint);
+}

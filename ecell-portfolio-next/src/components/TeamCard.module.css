@@ -1,0 +1,31 @@
+.teamCard {
+  padding: var(--space-4);
+  position: relative;
+  overflow: hidden;
+}
+.teamCard:hover {
+  border-color: var(--accent);
+}
+
+.index {
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  color: var(--accent);
+}
+
+.name {
+  font-size: var(--step-1);
+  margin-top: var(--space-2);
+}
+
+.role {
+  color: var(--ink-soft);
+  margin-top: 0.25rem;
+}
+
+.focus {
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  color: var(--ink-faint);
+  margin-top: var(--space-2);
+}

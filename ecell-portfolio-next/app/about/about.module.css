@@ -1,0 +1,78 @@
+.hero {
+  padding-top: var(--space-6);
+  max-width: 760px;
+}
+.heroTitle {
+  margin-top: var(--space-3);
+  font-size: var(--step-4);
+}
+.heroLede {
+  margin-top: var(--space-4);
+  color: var(--ink-soft);
+  font-size: var(--step-1);
+  max-width: 56ch;
+}
+.heading {
+  font-size: var(--step-3);
+}
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.timelineItem {
+  display: grid;
+  grid-template-columns: 5rem auto 1fr;
+  align-items: start;
+  gap: var(--space-3);
+  padding-block: var(--space-3);
+}
+.timelineItem:not(:last-child) {
+  border-bottom: var(--border-w) solid var(--line);
+}
+
+.timelineYear {
+  font-family: var(--font-mono);
+  color: var(--accent);
+  font-size: var(--step-0);
+}
+
+.timelineLine {
+  width: 2px;
+  align-self: stretch;
+  background: var(--line);
+}
+
+.timelineText {
+  color: var(--ink-soft);
+  max-width: 60ch;
+}
+
+.values {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+}
+.value {
+  padding: var(--space-4);
+}
+.value h3 {
+  font-size: var(--step-2);
+  margin-bottom: var(--space-2);
+}
+.value p {
+  color: var(--ink-soft);
+}
+
+@media (max-width: 700px) {
+  .values {
+    grid-template-columns: 1fr;
+  }
+  .timelineItem {
+    grid-template-columns: 3.5rem auto 1fr;
+  }
+}
