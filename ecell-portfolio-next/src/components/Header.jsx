@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { navRoutes } from '@/lib/nav-config'
@@ -10,14 +10,20 @@ import styles from './Header.module.css'
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [mounted, setMounted] = useState(false)
   const pathname = usePathname()
-  const { theme } = useTheme() 
+  const { theme } = useTheme()
+
+  useEffect(() => { setMounted(true) }, [])
+
+  // Before hydration completes, use the server default ('blackout') to avoid mismatch
+  const resolvedTheme = mounted ? theme : 'blackout'
 
   return (
     <header className={styles.header}>
       <div className={styles.bar}>
        <Link href="/" className={styles.brand} onClick={() => setMenuOpen(false)}>
-  <img src={theme === 'blackout' ? '/logo-dark.png' : '/logo.jpeg'}
+  <img src={resolvedTheme === 'blackout' ? '/logo-dark.png' : '/logo.png'}
             alt="E-Cell NIET"
             className={styles.logo} />
 </Link>

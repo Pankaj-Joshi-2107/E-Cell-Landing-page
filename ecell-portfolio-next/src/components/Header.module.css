@@ -144,4 +144,10 @@
   display: block;
   margin: 0;
   padding: 0;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 8px rgba(220, 38, 38, 0.6)) drop-shadow(0 0 20px rgba(220, 38, 38, 0.3));
 }

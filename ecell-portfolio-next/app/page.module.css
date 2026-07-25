@@ -5,7 +5,7 @@
 
 .heroInner {
   position: relative;
-  max-width: 760px;
+  max-width: 1200px;
 }
 
 .heroTitle {
@@ -19,7 +19,7 @@
 
 .heroLede {
   margin-top: var(--space-4);
-  max-width: 46ch;
+  max-width: 75ch;
   color: var(--ink-soft);
   font-size: var(--step-1);
 }
@@ -106,4 +106,9 @@
     align-items: flex-start;
     gap: var(--space-3);
   }
+}
+
+
+.heroTitle div {
+  overflow: hidden;
 }

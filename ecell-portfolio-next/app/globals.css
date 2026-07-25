@@ -108,7 +108,7 @@ button { font: inherit; cursor: pointer; }
 
 .container {
   width: 100%;
-  max-width: 1160px;
+  max-width: 1600px;
   margin-inline: auto;
   padding-inline: var(--space-4);
 }
@@ -153,6 +153,7 @@ button { font: inherit; cursor: pointer; }
   );
   opacity: 0.9;
   pointer-events: none;
+  display: none;
 }
 
 .btn {
@@ -203,7 +204,7 @@ button { font: inherit; cursor: pointer; }
   flex-direction: column;
   gap: var(--space-2);
   margin-bottom: var(--space-5);
-  max-width: 640px;
+  max-width: 1000px;
 }
 
 :focus-visible {

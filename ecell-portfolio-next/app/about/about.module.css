@@ -1,6 +1,6 @@
 .hero {
   padding-top: var(--space-6);
-  max-width: 760px;
+  max-width: 1200px;
 }
 .heroTitle {
   margin-top: var(--space-3);
@@ -10,7 +10,7 @@
   margin-top: var(--space-4);
   color: var(--ink-soft);
   font-size: var(--step-1);
-  max-width: 56ch;
+  max-width: 80ch;
 }
 .heading {
   font-size: var(--step-3);
@@ -49,7 +49,7 @@
 
 .timelineText {
   color: var(--ink-soft);
-  max-width: 60ch;
+  max-width: 90ch;
 }
 
 .values {

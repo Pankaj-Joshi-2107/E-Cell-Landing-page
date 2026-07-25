@@ -13,7 +13,7 @@
 .lede {
   margin-top: var(--space-3);
   color: var(--ink-soft);
-  max-width: 46ch;
+  max-width: 75ch;
 }
 
 .details {

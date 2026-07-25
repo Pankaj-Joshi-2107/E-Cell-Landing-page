@@ -1,11 +1,17 @@
 'use client'
 
+import { useState, useEffect } from 'react'
 import { useTheme } from './ThemeProvider'
 import styles from './ThemeToggle.module.css'
 
 export default function ThemeToggle({ className = '' }) {
   const { theme, toggleTheme } = useTheme()
-  const isDark = theme === 'blackout'
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => { setMounted(true) }, [])
+
+  // Use server default before hydration to prevent mismatch
+  const isDark = mounted ? theme === 'blackout' : true
 
   return (
     <button

@@ -8,7 +8,7 @@
 .heroLede {
   margin-top: var(--space-3);
   color: var(--ink-soft);
-  max-width: 52ch;
+  max-width: 80ch;
 }
 
 .filterTabs {
