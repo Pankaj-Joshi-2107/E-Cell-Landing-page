@@ -35,7 +35,6 @@ export default function ThemeToggle({ className = '' }) {
           )}
         </span>
       </span>
-      <span className={styles.label}>{isDark ? 'Blackout' : 'Daylight'}</span>
     </button>
   )
 }

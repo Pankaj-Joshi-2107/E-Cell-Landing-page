@@ -4,20 +4,23 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { navRoutes } from '@/lib/nav-config'
+import { useTheme } from './ThemeProvider'
 import ThemeToggle from './ThemeToggle'
 import styles from './Header.module.css'
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
   const pathname = usePathname()
+  const { theme } = useTheme() 
 
   return (
     <header className={styles.header}>
       <div className={`container ${styles.bar}`}>
-        <Link href="/" className={styles.brand} onClick={() => setMenuOpen(false)}>
-          <span className={styles.brandMark} aria-hidden="true"></span>
-          <span>E-CELL</span>
-        </Link>
+       <Link href="/" className={styles.brand} onClick={() => setMenuOpen(false)}>
+  <img src={theme === 'blackout' ? '/logo-dark.png' : '/logo.jpeg'}
+            alt="E-Cell NIET"
+            className={styles.logo} />
+</Link>
 
         <nav className={`${styles.nav} ${styles.navDesktop}`} aria-label="Primary">
           {navRoutes.map((route) => (

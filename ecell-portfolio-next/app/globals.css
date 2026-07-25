@@ -43,7 +43,7 @@
 
   /* Custom cursor — see public/cursors/README.md to swap in your own image.
      Falls back to the normal pointer cursor if the image ever fails to load. */
-  --cursor-pointer: url('/cursors/pointer.svg') 12 12, pointer;
+  --cursor-pointer: url('/cursors/rocket-cursor.png') 1 1, pointer;
 }
 
 /* Daylight theme: warm white field, near-black ink, red as the single hot accent */
