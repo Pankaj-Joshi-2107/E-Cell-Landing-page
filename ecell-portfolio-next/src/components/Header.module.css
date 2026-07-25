@@ -13,6 +13,8 @@
   justify-content: space-between;
   gap: var(--space-3);
   padding-block: var(--space-2);
+  padding-inline: var(--space-4);
+  width: 100%;
 }
 
 .brand {
@@ -137,7 +139,7 @@
 
 
 .logo {
-  height: 75px;     
+  height: 65px;     
   width: auto;
   display: block;
   margin: 0;

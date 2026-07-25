@@ -15,7 +15,7 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <div className={`container ${styles.bar}`}>
+      <div className={styles.bar}>
        <Link href="/" className={styles.brand} onClick={() => setMenuOpen(false)}>
   <img src={theme === 'blackout' ? '/logo-dark.png' : '/logo.jpeg'}
             alt="E-Cell NIET"

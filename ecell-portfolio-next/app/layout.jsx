@@ -1,5 +1,6 @@
 import { Space_Grotesk, Inter, JetBrains_Mono } from 'next/font/google'
 import { ThemeProvider } from '@/components/ThemeProvider'
+import ClientBody from '@/components/layout/ClientBody'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import './globals.css'
@@ -60,9 +61,11 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <ThemeProvider>
-          <Header />
-          <main>{children}</main>
-          <Footer />
+          <ClientBody>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+          </ClientBody>
         </ThemeProvider>
       </body>
     </html>
