@@ -43,7 +43,7 @@
 .bottom {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding-block: var(--space-3);
   border-top: var(--border-w) solid var(--line);
   font-family: var(--font-mono);
@@ -51,12 +51,7 @@
   color: var(--ink-faint);
 }
 
-.stripe {
-  width: 60px;
-  height: 6px;
-  background: linear-gradient(90deg, var(--accent) 0 50%, transparent 50% 100%);
-  background-size: 12px 100%;
-}
+
 
 @media (max-width: 780px) {
   .grid {

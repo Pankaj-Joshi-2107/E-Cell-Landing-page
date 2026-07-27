@@ -7,10 +7,28 @@ import styles from './page.module.css'
 import { motion } from 'framer-motion'
 
 const stats = [
-  { label: 'Founders trained', value: '480+' },
-  { label: 'Startups launched', value: '62' },
-  { label: 'Funding raised', value: '$3.1M' },
-  { label: 'Active members', value: '210' }
+  {
+    label: 'Founders trained',
+    number: 480,
+    suffix: '+'
+  },
+  {
+    label: 'Startups launched',
+    number: 62,
+    suffix: ''
+  },
+  {
+    label: 'Funding raised',
+    prefix: '$',
+    number: 3.1,
+    decimals: 1,
+    suffix: 'M'
+  },
+  {
+    label: 'Active members',
+    number: 210,
+    suffix: ''
+  }
 ]
 
 const pillars = [

@@ -48,7 +48,7 @@ export default function Footer() {
 
       <div className={`container ${styles.bottom}`}>
         <span>&copy; {year} E-Cell. All rights reserved.</span>
-        <span className={styles.stripe} aria-hidden="true"></span>
+    
       </div>
     </footer>
   )

@@ -4,6 +4,7 @@ import ClientBody from '@/components/layout/ClientBody'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import './globals.css'
+import SocialSidebar from "@/components/SocialSidebar";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -63,6 +64,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider>
           <ClientBody>
             <Header />
+            <SocialSidebar />
             <main>{children}</main>
             <Footer />
           </ClientBody>
