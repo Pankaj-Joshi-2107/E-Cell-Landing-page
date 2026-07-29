@@ -5,7 +5,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import './globals.css'
 import SocialSidebar from "@/components/SocialSidebar";
-
+import GalaxyDust from "@/components/GalaxyDust";
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
   weight: ['500', '700'],
@@ -61,6 +61,7 @@ export default function RootLayout({ children }) {
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
       <body>
+        <GalaxyDust />
         <ThemeProvider>
           <ClientBody>
             <Header />

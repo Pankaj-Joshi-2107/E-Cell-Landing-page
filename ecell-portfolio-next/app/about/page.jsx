@@ -1,5 +1,6 @@
 import styles from './about.module.css'
 
+
 const timeline = [
   { year: '2019', text: 'Founded by six students with a shared refusal to wait for graduation to start building.' },
   { year: '2021', text: 'First alumni fund closed — $250K committed to back campus-born startups.' },
@@ -11,14 +12,30 @@ export default function AboutPage() {
   return (
     <>
       <section className={`section container ${styles.hero}`}>
+
+    
+
+    <div className={styles.overlay}></div>
+
+    <div className={styles.content}>
         <span className="eyebrow">About us</span>
-        <h1 className={styles.heroTitle}>We exist so good ideas stop dying in group chats.</h1>
+
+        <h1 className={styles.heroTitle}>
+            Empowering Students to Build the Future.
+        </h1>
+
         <p className={styles.heroLede}>
-          E-Cell is the entrepreneurship cell of the campus — a student-run body that gives
-          founders the three things ideas actually die without: mentorship, capital access,
-          and a room full of people who take them seriously.
+            Entrepreneurship Cell, NIET is a student-led community dedicated to
+            fostering innovation, creativity, and entrepreneurial thinking.
+            We provide aspiring founders with the mentorship, resources, and
+            opportunities needed to transform ideas into impactful ventures.
+            Whether you're launching your first startup, exploring product
+            development, or simply curious about entrepreneurship,
+            E-Cell is where your journey begins.
         </p>
-      </section>
+    </div>
+
+</section>
 
       <section className="section container">
         <div className="section-head">

@@ -225,3 +225,14 @@ button { font: inherit; cursor: pointer; }
     scroll-behavior: auto !important;
   }
 }
+
+
+body {
+    background: #080808;
+    overflow-x: hidden;
+}
+
+.site-content {
+    position: relative;
+    z-index: 1;
+}
