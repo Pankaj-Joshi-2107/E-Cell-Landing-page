@@ -10,6 +10,6 @@ export const navRoutes = [
   { path: '/about', label: 'About', order: 2 },
   { path: '/portfolio', label: 'Portfolio', order: 3 },
   { path: '/events', label: 'Events', order: 4 },
-  { path: '/team', label: 'Team', order: 5 },
+  { label: 'Gallery', path: '/gallery', order: 5 },
   { path: '/contact', label: 'Contact', order: 6 }
 ].sort((a, b) => a.order - b.order)
