@@ -50,9 +50,9 @@ export default function HomePage() {
   const featured = events.filter((e) => e.status === 'upcoming').slice(0, 3)
 
   const words = [
-    "Fueling",
-    "The Next Generation of",
-    "Founders."
+    "Where",
+    "Vision becomes",
+    "Ventures."
   ]
 
   return (
@@ -77,7 +77,7 @@ export default function HomePage() {
                   ease: "easeOut",
                 }}
               >
-                {word === "Founders." ? (
+                {word === "Ventures." ? (
                   <span className={styles.heroTitleAccent}>
                     {word}
                   </span>
