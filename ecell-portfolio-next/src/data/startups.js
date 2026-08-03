@@ -24,45 +24,48 @@ export const podium = [
 
 export const startups = [
   {
-    id: 'nimbuspay',
-    name: 'NimbusPay',
-    category: 'Fintech',
-    tagline: 'Payroll and tax-filing built for gig workers.',
-    stat: '$180K raised'
+    id: "nirwanagrid",
+    name: "NirwanaGrid",
+    logo: "/logos/nirwanagrid.jpeg",
+    website: "https://nirwanagrid.com",
+    category: "IoT & Smart Energy",
+    tagline: "AI-powered smart energy management with automatic electrical fault prevention.",
+    stat: "Auto-Cut Protection"
   },
   {
-    id: 'verdant-loop',
-    name: 'Verdant Loop',
-    category: 'AgriTech',
-    tagline: 'Vertical-farming SaaS for urban micro-greens producers.',
-    stat: '$95K raised'
+    id: "uneako",
+    name: "Uneako",
+    logo: "/logos/uneako.jpeg",
+    website: "https://uneako.com",
+    category: "ClimateTech & Sustainability",
+    tagline: "Climate-positive alternatives to single-use plastics for offices, events and businesses.",
+    stat: "Climate Positive"
   },
   {
-    id: 'circuitry-labs',
-    name: 'Circuitry Labs',
-    category: 'Hardware',
-    tagline: 'Open-source prototyping kits for student engineers.',
-    stat: 'Bootstrapped'
+    id: "speedo-express",
+    name: "Speedo Express",
+    logo: "/logos/speedoexpress.jpeg",
+    website: "https://www.speedoexpress.org",
+    category: "Logistics & Transportation",
+    tagline: "On-demand logistics and vehicle booking across Delhi NCR.",
+    stat: "Under 30-Min Dispatch"
   },
   {
-    id: 'hearth-health',
-    name: 'Hearth Health',
-    category: 'HealthTech',
-    tagline: 'Telemedicine access for rural primary-care clinics.',
-    stat: '$220K raised'
+    id: "clickites",
+    name: "Clickites",
+    logo: "/logos/clickites.jpeg",
+    website: "https://clickites.com",
+    category: "IT Services & Digital Solutions",
+    tagline: "End-to-end web, mobile and digital marketing solutions for business growth.",
+    stat: "Digital Growth"
   },
   {
-    id: 'waypoint',
-    name: 'Waypoint Logistics',
-    category: 'Logistics',
-    tagline: 'Route optimization for last-mile campus delivery fleets.',
-    stat: '$140K raised'
-  },
-  {
-    id: 'sable-co',
-    name: 'Sable & Co',
-    category: 'Sustainability',
-    tagline: 'Compostable packaging alternatives for D2C food brands.',
-    stat: '$75K raised'
+    id: "printables",
+    name: "Printables",
+    logo: "/logos/printables.png",
+    website: "https://printables.co.in",
+    category: "Personalized Printing & Stationery",
+    tagline: "Customized stationery and printing solutions for individuals, professionals, and businesses.",
+    stat: "Personalized Designs"
   }
 ]
