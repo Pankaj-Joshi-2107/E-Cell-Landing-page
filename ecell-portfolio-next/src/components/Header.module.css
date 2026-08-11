@@ -45,12 +45,48 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--ink-soft);
-  padding-block: 0.4em;
+  padding: 0.4em 0.6em;
   border-bottom: 2px solid transparent;
-  transition: color 0.15s var(--ease-out), border-color 0.15s var(--ease-out);
+  border-radius: var(--radius-sm);
+  position: relative;
+  transition: color 0.15s var(--ease-out),
+              background 0.2s var(--ease-out),
+              transform 0.15s var(--ease-out),
+              border-color 0.15s var(--ease-out);
 }
 
-.navLink:hover,
+/* HOVER effect — background tint + lift */
+.navLink:hover {
+  color: var(--ink);
+  border-color: var(--accent);
+  background: var(--accent-tint);
+  transform: translateY(-2px);
+}
+
+/* CLICK effect — press down */
+.navLink:active {
+  transform: translateY(1px);
+  background: var(--accent);
+  color: var(--on-accent);
+  transition-duration: 0.05s;
+}
+
+/* Underline animation on hover */
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.3s var(--ease-out), left 0.3s var(--ease-out);
+}
+.navLink:hover::after {
+  width: 80%;
+  left: 10%;
+}
+
 .navLinkActive {
   color: var(--ink);
   border-color: var(--accent);

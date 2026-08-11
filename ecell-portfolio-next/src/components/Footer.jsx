@@ -42,7 +42,18 @@ export default function Footer() {
           <a href="mailto:hello@ecell.club" className={styles.link}>
             hello@ecell.club
           </a>
+          <a href="tel:+911234567890" className={styles.link}>
+            +91 123 456 7890
+          </a>
           <span className={`${styles.link} ${styles.linkMuted}`}>Innovation Block, Campus</span>
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Noida+Institute+of+Technology+and+Engineering"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.link}
+          >
+            View on Map
+          </a>
         </div>
       </div>
 

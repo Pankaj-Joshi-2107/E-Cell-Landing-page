@@ -83,8 +83,32 @@
   color: var(--ink-soft);
 }
 
+.mapSection {
+  grid-column: 1 / -1;
+  margin-top: var(--space-5);
+}
+
+.mapTitle {
+  margin-top: var(--space-2);
+  font-size: var(--step-2);
+}
+
+.mapContainer {
+  margin-top: var(--space-3);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: var(--border-w) solid var(--line);
+}
+
+.directionsBtn {
+  margin-top: var(--space-3);
+}
+
 @media (max-width: 860px) {
   .contact {
     grid-template-columns: 1fr;
+  }
+  .mapContainer iframe {
+    height: 300px;
   }
 }
